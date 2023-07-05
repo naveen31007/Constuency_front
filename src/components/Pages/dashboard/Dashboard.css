@@ -1,0 +1,52 @@
+.dashboard-card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.dashboard-card:hover .card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #0c4692;
+  color:white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: rgb(185, 226, 237);
+  color:rgb(205, 111, 16);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content h5 {
+  
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}

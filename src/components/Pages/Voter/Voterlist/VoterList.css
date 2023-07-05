@@ -1,0 +1,38 @@
+.modal-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-card {
+font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .details-column {
+    width: 100%;
+    flex: 0 0 45%;
+    color: #0e0b0b;
+    margin-bottom: 20px;
+
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .table {
+    width: 100%;
+  }
